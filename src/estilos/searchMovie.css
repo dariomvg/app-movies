@@ -44,6 +44,7 @@
     align-items: center;
 }
 .btn-principal{
+    width: 120px;
     text-decoration: none;
     text-align: center;
     font-weight: bold;
@@ -94,3 +95,11 @@
     color: #fff;
     font-size: 18px;
 }
+
+@media (max-width: 430px) {
+    .title-result {
+        margin-left: 10px;
+        margin-top: 20px;
+        font-size: 40px;
+    }
+} 
