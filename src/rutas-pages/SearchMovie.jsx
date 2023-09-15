@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import InfoContext from "../contexts/InfoContext";
 import { Constantes } from "../constants/Constants";
+import imgVolver from "../assets/images/icon-volver.png"
 
 function SearchMovie() {
   const { image_url_500 } = Constantes();
@@ -17,7 +18,8 @@ function SearchMovie() {
       <div className="seccion-header">
         <h1 className="title-result">results</h1>
         <Link to="/" className="btn-principal">
-          ⮌ return
+          <img src={imgVolver} width={20} height={20} alt="imagen de flecha para volver" />
+          return
         </Link>
       </div>
       <div className="seccion-2">

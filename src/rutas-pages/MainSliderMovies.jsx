@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import InfoContext from "../contexts/InfoContext";
 import { Constantes } from "../constants/Constants";
+import imgAdelante from "../assets/images/icon-adelante.png";
+import imgAtras from "../assets/images/icon-atras.png";
 const Seccion = lazy(() => import("../components/Seccion"));
 
 function MainSliderMovies() {
@@ -36,8 +38,12 @@ function MainSliderMovies() {
           selected === index && (
             <div key={item.id} className="container-movie">
               <div className="buttons-movies">
-                <button onClick={prev} className="funciones-btn">🡠</button>
-                <button onClick={next} className="funciones-btn">🡢</button>
+                <button onClick={prev} className="funciones-btn">
+                  <img src={imgAtras} width={50} height={50} alt="imagen flecha adelante" />
+                </button>
+                <button onClick={next} className="funciones-btn">
+                  <img src={imgAdelante} width={50} height={50} alt="imagen de flecha atras" />
+                </button>
               </div>
               <img
               className="img-slider"

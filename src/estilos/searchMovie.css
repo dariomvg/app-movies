@@ -54,6 +54,9 @@
     color: #fff;
     padding: 15px;
     font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .card-movie-search{
     width: 230px;
