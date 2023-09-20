@@ -1,4 +1,4 @@
-# App de peliculas
+# App de peliculas 🍿
 > Aplicación donde puedes ver la información de las peliculas más actuales. También puedes buscar peliculas y series tanto nuevas como no tan actuales.
 
 ###Clonar el Proyecto
