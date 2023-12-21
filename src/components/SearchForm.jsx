@@ -1,46 +1,43 @@
 import { useContext, useState } from "react";
-import "../estilos/menu.css";
 import { Link } from "react-router-dom";
 import InfoContext from "../contexts/InfoContext";
 import { SearchMovieApi } from "../services/SearchMovieApi";
 import React from "react";
+import "../estilos/menu.css";
 
 function SearchForm() {
-
   const [query, setQuery] = useState("");
-  const { handleForm } = useContext(InfoContext)
+  const { handleForm } = useContext(InfoContext);
 
-  const handleSearch = async (e) => {
-    e.preventDefault();
+  const handleSearch = async () => {
     if (query === "") {
       return;
+    } else {
+      const newMovie = await SearchMovieApi(query);
+      handleForm(newMovie);
+      setQuery("");
     }
-    const newMovie = await SearchMovieApi(query)
-    handleForm(newMovie)
-    setQuery("");
   };
 
   return (
-    <div>
-      <form className="formulario">
-        <input
-          type="text"
-          placeholder="Search movie..."
-          className="input-search"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          required
-        />
-        {query !== "" && (
-          <button onClick={(e) => handleSearch(e)} className="input-send">
-            <Link className="link-form" to="/search">
-              Search
-            </Link>
-          </button>
-        )}
-      </form>
-    </div>
+    <form className="formulario">
+      <input
+        type="text"
+        placeholder="Search movie..."
+        className="input-search"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        required
+      />
+      {query !== "" && (
+        <button onClick={handleSearch} className="input-send">
+          <Link className="link-form" to="/search">
+            Search
+          </Link>
+        </button>
+      )}
+    </form>
   );
 }
 
-export default React.memo(SearchForm)
+export default React.memo(SearchForm);

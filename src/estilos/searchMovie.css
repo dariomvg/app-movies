@@ -1,6 +1,8 @@
 .seccion-1 {
     width: 100%;
+    height: 100vh;
     background-color:#242424 ;
+    overflow-y: auto;
 }
 .seccion-2 {
     width: 80%;
@@ -80,6 +82,11 @@
     color: #fff;
     display: grid;
     gap: 10px;
+}
+.cont-release {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 .card-button-search{
     text-decoration: none;

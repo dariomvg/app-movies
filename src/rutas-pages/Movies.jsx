@@ -1,38 +1,20 @@
-import { Constantes } from "../constants/Constants";
-import "../estilos/seccion.css";
 import { MoviesApi } from "../services/MoviesApi";
+import { CardMovie } from "../components/CardMovie";
+import "../estilos/seccion.css";
 
 function Movies() {
-  const { image_url_500 } = Constantes();
-  const {movies} = MoviesApi();
+  const { movies } = MoviesApi();
 
   return (
-    <div className="seccion1">
-        <h1 className="title-movies-enl">Movies...</h1>
+    <section className="seccion1">
+      <h1 className="title-movies-enl">Movies...</h1>
       <section className="seccion">
         {movies
-          ? movies.map((item) => (
-              <div key={item.id} className="card-movie">
-                <img
-                  src={image_url_500 + item.poster_path}
-                  alt={item.original_title}
-                  loading="lazy"
-                  width={300}
-                  height={450}
-                />
-                <div className="card-container">
-                  <div className="card-info">
-                    <h2 className="card-title">{item.original_title}</h2>
-                  </div>
-                  <p>Release: {item.release_date}</p>
-                  <p className="card-vote">{item.vote_average} ★</p>
-                </div>
-              </div>
-            ))
+          ? movies.map((movie) => <CardMovie key={movie.id} movie={movie} />)
           : null}
       </section>
-    </div>
+    </section>
   );
 }
 
-export default Movies
+export default Movies;
