@@ -1,0 +1,1 @@
+import{r as o,d as c,o as n}from"./index-f3aa48ef.js";function v(){const[t,e]=o.useState([]),[r,a]=o.useState(null);return o.useEffect(()=>{(async()=>{try{const i=await(await fetch(`${c}/discover/movie`,n)).json();e(i.results)}catch(s){console.log(s),a(s)}})()},[]),{movies:t,error:r}}export{v as M};
