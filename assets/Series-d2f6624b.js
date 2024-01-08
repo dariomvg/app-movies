@@ -1,0 +1,1 @@
+import{j as s,f as i}from"./index-a9d0018b.js";import{C as r}from"./CardRatingSerie-7fa25d16.js";/* empty css                */function c(){return s.jsxs("section",{className:"seccion1",children:[s.jsx("h1",{className:"title-movies-enl",children:"Series..."}),s.jsx("section",{className:"seccion",children:i?i.results.map(e=>s.jsx(r,{serie:e},e.id)):null})]})}export{c as default};
