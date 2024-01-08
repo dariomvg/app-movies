@@ -21,6 +21,11 @@
   margin-left: 50px;
   user-select: none;
   color: #fff;
+  font-size: 25px;
+}
+.title-movies-enl {
+  color: #fff;
+  font-size: 25px;
 }
 
 .card-movie {

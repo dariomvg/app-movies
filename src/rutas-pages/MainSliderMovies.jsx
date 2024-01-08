@@ -76,7 +76,7 @@ function MainSliderMovies() {
                 />
                 <div className="info-movies">
                   <div className="title-votes">
-                    <h1>{item.original_title}</h1>
+                    <h1 className="title-slide">{item.original_title}</h1>
                     <div className="vote">
                       <p>{item.vote_average}</p>
                       <img src={iconStar} alt="icon star" className="icon-estrella" width={15} height={15} loading="lazy"/>

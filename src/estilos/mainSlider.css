@@ -27,6 +27,9 @@
     display: grid;
     gap: 15px;
 }
+.title-slide {
+    font-size: 30px;
+}
 .title-votes{
     display: flex;
     align-items: center;
