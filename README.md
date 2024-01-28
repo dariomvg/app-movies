@@ -26,6 +26,6 @@
 
 ###Inicia la aplicación:
 
-1. ejecuta: `npm start`
+1. ejecuta: `npm run dev`
 
 #####La aplicación debería abrirse en tu navegador predeterminado en http://localhost:3000/.
