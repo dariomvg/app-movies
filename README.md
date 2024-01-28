@@ -1,7 +1,7 @@
 # App de peliculas 🍿
 > Aplicación donde puedes ver la información de las peliculas más actuales. También puedes buscar peliculas y series tanto nuevas como no tan actuales.
 
-###Clonar el Proyecto
+### Clonar el Proyecto
 #### Para clonar este proyecto en tu máquina local, asegúrate de tener Git instalado. Luego, sigue estos pasos:
 
 1. Abre tu terminal.
@@ -24,8 +24,8 @@
 
 `npm install`
 
-###Inicia la aplicación:
+### Inicia la aplicación:
 
 1. ejecuta: `npm run dev`
 
-#####La aplicación debería abrirse en tu navegador predeterminado en http://localhost:3000/.
+##### La aplicación debería abrirse en tu navegador predeterminado en http://localhost:3000/.
