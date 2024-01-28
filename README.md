@@ -22,11 +22,7 @@
 
 2. Instala las dependencias utilizando npm o yarn:
 
-`npm install` ó `yarn install`
-
-3. Instalar dependencias adicionales (react-router-dom)
-
-`npm install react-router-dom` ó `yarn add react-router-dom`
+`npm install`
 
 ###Inicia la aplicación:
 
